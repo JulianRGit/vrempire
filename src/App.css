@@ -1,0 +1,131 @@
+body {
+  font-family: Itim;
+  color: black;
+}
+/* Container principal pour tout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+h2 {
+  font-size: 48px;
+  border: 3px solid #8D8D8D;
+  padding: 10px;
+  text-align: center;
+  border-style: inset;
+  margin: 0;
+  background-color: #D9D9D9;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.small_button {
+  font-size: 42px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 1px 11px 25px -4px #000000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  transition: all ease-in .3s;
+}
+
+.small_button:hover {
+  box-shadow: 1px 11px 25px -4px #00000061;
+}
+
+/* Barre latérale (gauche et droite) */
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: #CDCDCD;
+}
+
+.main {
+  width: 60%;
+}
+
+/* Button styles */
+.large_button {
+  background-color: #D9D9D9;
+  font-size: 15px;
+  box-shadow: -1px 7px 18px -9px #000000;
+  font-family: Itim;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+.large_button:hover {
+  box-shadow: -1px 7px 18px -9px #00000061;
+}
+
+.bottomBar {
+  background-color: #CDCDCD;
+  height: 40%;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.bottomBar > div {
+}
+.bottomBar > div > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+
+.zonePixel {
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+  max-height: 60%;
+  height: 60%;
+}
+.pixel-square {
+  background-color: white;
+  border-radius: 3px;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.zonePixel h3{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
